@@ -4,7 +4,6 @@ prediction_outputs/
 *.pyc
 
 # Large model files
-model_artifacts/distilbert_finetuned/
 *.safetensors
 *.bin
 *.pt
