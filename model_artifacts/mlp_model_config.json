@@ -1,0 +1,11 @@
+{
+  "model_name": "TF-IDF + MLP Neural Classifier",
+  "artifact": "model_artifacts/tfidf_mlp_model.pkl",
+  "threshold": 0.2,
+  "features": "serialized text + metadata + severity signal tokens",
+  "hidden_layers": [
+    128,
+    64
+  ],
+  "note": "Candidate improved model. Metrics are on pseudo-labeled held-out data."
+}

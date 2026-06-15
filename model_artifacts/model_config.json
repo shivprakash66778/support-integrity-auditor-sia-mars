@@ -1,0 +1,6 @@
+{
+  "selected_model": "distilbert",
+  "distilbert_threshold": 0.955,
+  "distilbert_model_dir": "distilbert_finetuned",
+  "note": "DistilBERT selected after Colab GPU training. Fallback: MLP > LR if transformer artifacts missing."
+}
