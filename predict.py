@@ -57,12 +57,20 @@ def load_artifacts(model_dir):
     selected = "lr"
 
     # Load MLP if available
-    mlp_path = os.path.join(model_dir, "mlp_classifier.pkl")
-    if os.path.exists(mlp_path):
-        try:
-            mlp = joblib.load(mlp_path)
-        except Exception:
-            mlp = None
+    mlp_candidates = [
+        os.path.join(model_dir, "tfidf_mlp_model.pkl"),
+        os.path.join(model_dir, "mlp_classifier.pkl"),
+    ]
+    
+    for mlp_path in mlp_candidates:
+        if os.path.exists(mlp_path):
+            try:
+                mlp = joblib.load(mlp_path)
+                print(f"  MLP loaded from {mlp_path}")
+                break
+            except Exception as e:
+                print(f"  MLP load failed from {mlp_path}: {e}")
+                mlp = None
 
     cfg_path = os.path.join(model_dir, "model_config.json")
     if os.path.exists(cfg_path):
