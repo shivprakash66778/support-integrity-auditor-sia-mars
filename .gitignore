@@ -1,0 +1,12 @@
+__pycache__/
+prediction_outputs/
+.ipynb_checkpoints/
+*.pyc
+
+# Large model files
+model_artifacts/distilbert_finetuned/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.zip
