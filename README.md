@@ -10,9 +10,9 @@
 | Resource | Link |
 |---|---|
 | GitHub Repository | Paste GitHub repo link here |
-| Streamlit App | (https://3ut8nqtpaanvre6wpsgust.streamlit.app/) |
-| Demo Video | (https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
-| DistilBERT Model Artifacts | [Paste Google Drive / Hugging Face link here if model files are not pushed to GitHu](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
+| Streamlit App | [Link](https://3ut8nqtpaanvre6wpsgust.streamlit.app/) |
+| Demo Video | [Link](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
+| DistilBERT Model Artifacts | [Link](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
 
 ---
 
