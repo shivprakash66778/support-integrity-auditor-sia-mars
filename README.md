@@ -12,7 +12,7 @@
 | GitHub Repository | [support-integrity-auditor](https://github.com/shivprakash66778/support-integrity-auditor-sia-mars) |
 | Streamlit App | [ SIA App](https://3ut8nqtpaanvre6wpsgust.streamlit.app/) |
 | Demo Video | [Drive Link](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
-| DistilBERT Model Artifacts | [Link](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
+| DistilBERT Model Artifacts | [Drive Link](https://drive.google.com/drive/folders/1SL-iCYx_ueRuq31Mz8tSH39UuaBtFEnP?usp=sharing) |
 
 ---
 
