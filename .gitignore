@@ -2,10 +2,4 @@ __pycache__/
 prediction_outputs/
 .ipynb_checkpoints/
 *.pyc
-
-# Large model files
-*.safetensors
-*.bin
-*.pt
-*.pth
 *.zip
