@@ -1,0 +1,13 @@
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.2
+scipy>=1.10
+matplotlib>=3.6
+seaborn>=0.12
+joblib>=1.2
+streamlit>=1.28
+torch>=2.0
+transformers>=4.30
+sentencepiece>=0.1.99
+protobuf>=3.20
+accelerate>=0.20
