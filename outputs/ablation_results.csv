@@ -1,0 +1,9 @@
+configuration,accuracy,macro_f1
+A: Rule-based NLP,0.6117,0.5966
+B: Resolution-time,0.5906,0.5729
+C: Issue-category,0.561,0.5546
+D: Satisfaction-inverse,0.7042,0.6531
+A+B,0.6897,0.642
+A+B+C,0.6784,0.6604
+A+B+C+D (all signals),0.6897,0.6539
+Full model (TF-IDF + signals + text stats),0.8746,0.8507

@@ -1,0 +1,18 @@
+{
+  "original_dossier_count": 6581,
+  "filtered_dossier_count": 6218,
+  "removed_delta_0_count": 363,
+  "remaining_delta_distribution": {
+    "-3": 9,
+    "-2": 588,
+    "-1": 662,
+    "1": 2516,
+    "2": 2237,
+    "3": 206
+  },
+  "remaining_mismatch_type_distribution": {
+    "False Alarm": 1259,
+    "Hidden Crisis": 4959
+  },
+  "rule_applied": "Removed dossiers where severity_delta == 0; enforced Hidden Crisis for delta > 0 and False Alarm for delta < 0."
+}

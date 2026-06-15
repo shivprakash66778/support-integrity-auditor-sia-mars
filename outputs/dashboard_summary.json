@@ -1,0 +1,16 @@
+{
+  "total_tickets": 20000,
+  "total_mismatch": 6581,
+  "total_consistent": 13419,
+  "mismatch_rate": 0.329,
+  "hidden_crisis_count": 2443,
+  "false_alarm_count": 597,
+  "borderline_count": 9350,
+  "model_metrics": {
+    "selected": "distilbert",
+    "accuracy": 0.9962,
+    "macro_f1": 0.9954,
+    "recall_consistent": 0.9965,
+    "recall_mismatch": 0.9956
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "model": "TF-IDF + MLP Neural Classifier",
+  "threshold": 0.215,
+  "accuracy": 0.9343,
+  "macro_f1": 0.9168,
+  "recall_consistent": 0.9746,
+  "recall_mismatch": 0.8333,
+  "confusion_matrix": [[1483, 39], [101, 507]],
+  "verification": {
+    "accuracy_ge_83": true,
+    "f1_ge_82": true,
+    "recall_consistent_ge_78": true,
+    "recall_mismatch_ge_78": true,
+    "all_passed": true
+  },
+  "architecture": {
+    "hidden_layers": [256, 128, 64],
+    "activation": "relu",
+    "input": "TF-IDF (10K features) + metadata (OHE + scaled)"
+  }
+}

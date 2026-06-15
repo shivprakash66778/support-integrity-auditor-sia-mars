@@ -1,0 +1,145 @@
+{
+  "selected_model": "lr",
+  "baseline": {
+    "model": "Logistic Regression (baseline)",
+    "accuracy": 0.8746,
+    "macro_f1": 0.8507,
+    "recall_consistent": 0.8922,
+    "recall_mismatch": 0.8306,
+    "confusion_matrix": [
+      [
+        1358,
+        164
+      ],
+      [
+        103,
+        505
+      ]
+    ],
+    "classification_report": {
+      "Consistent": {
+        "precision": 0.9295003422313484,
+        "recall": 0.8922470433639947,
+        "f1-score": 0.9104927924907811,
+        "support": 1522.0
+      },
+      "Mismatch": {
+        "precision": 0.7548579970104634,
+        "recall": 0.8305921052631579,
+        "f1-score": 0.7909162098668755,
+        "support": 608.0
+      },
+      "accuracy": 0.8746478873239436,
+      "macro avg": {
+        "precision": 0.8421791696209059,
+        "recall": 0.8614195743135763,
+        "f1-score": 0.8507045011788283,
+        "support": 2130.0
+      },
+      "weighted avg": {
+        "precision": 0.8796493817175934,
+        "recall": 0.8746478873239436,
+        "f1-score": 0.876360134164333,
+        "support": 2130.0
+      }
+    },
+    "verification": {
+      "accuracy_ge_83": true,
+      "f1_ge_82": true,
+      "recall_consistent_ge_78": true,
+      "recall_mismatch_ge_78": true,
+      "all_passed": true
+    }
+  },
+  "improved": {
+    "model": "HistGradientBoosting (improved)",
+    "accuracy": 0.8437,
+    "macro_f1": 0.8165,
+    "recall_consistent": 0.8594,
+    "recall_mismatch": 0.8043,
+    "confusion_matrix": [
+      [
+        1308,
+        214
+      ],
+      [
+        119,
+        489
+      ]
+    ],
+    "classification_report": {
+      "Consistent": {
+        "precision": 0.9166082690960056,
+        "recall": 0.859395532194481,
+        "f1-score": 0.8870803662258393,
+        "support": 1522.0
+      },
+      "Mismatch": {
+        "precision": 0.6955903271692745,
+        "recall": 0.8042763157894737,
+        "f1-score": 0.7459954233409611,
+        "support": 608.0
+      },
+      "accuracy": 0.8436619718309859,
+      "macro avg": {
+        "precision": 0.80609929813264,
+        "recall": 0.8318359239919773,
+        "f1-score": 0.8165378947834002,
+        "support": 2130.0
+      },
+      "weighted avg": {
+        "precision": 0.8535195795695021,
+        "recall": 0.8436619718309859,
+        "f1-score": 0.8468082322943812,
+        "support": 2130.0
+      }
+    },
+    "verification": {
+      "accuracy_ge_83": true,
+      "f1_ge_82": false,
+      "recall_consistent_ge_78": true,
+      "recall_mismatch_ge_78": true,
+      "all_passed": false
+    }
+  },
+  "ablation": {
+    "A: Rule-based NLP": {
+      "accuracy": 0.6117,
+      "macro_f1": 0.5966
+    },
+    "B: Resolution-time": {
+      "accuracy": 0.5906,
+      "macro_f1": 0.5729
+    },
+    "C: Issue-category": {
+      "accuracy": 0.561,
+      "macro_f1": 0.5546
+    },
+    "D: Satisfaction-inverse": {
+      "accuracy": 0.7042,
+      "macro_f1": 0.6531
+    },
+    "A+B": {
+      "accuracy": 0.6897,
+      "macro_f1": 0.642
+    },
+    "A+B+C": {
+      "accuracy": 0.6784,
+      "macro_f1": 0.6604
+    },
+    "A+B+C+D (all signals)": {
+      "accuracy": 0.6897,
+      "macro_f1": 0.6539
+    }
+  },
+  "model_comparison": {
+    "logistic_regression": {
+      "accuracy": 0.8746,
+      "macro_f1": 0.8507
+    },
+    "hist_gradient_boosting": {
+      "accuracy": 0.8437,
+      "macro_f1": 0.8165
+    }
+  }
+}

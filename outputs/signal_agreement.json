@@ -1,0 +1,27 @@
+{
+  "rule_vs_resolution": {
+    "exact_agreement": 0.2628,
+    "cohens_kappa": 0.0207
+  },
+  "rule_vs_category": {
+    "exact_agreement": 0.7118,
+    "cohens_kappa": 0.5528
+  },
+  "rule_vs_satisfaction": {
+    "exact_agreement": 0.2946,
+    "cohens_kappa": 0.0434
+  },
+  "resolution_vs_category": {
+    "exact_agreement": 0.269,
+    "cohens_kappa": 0.0293
+  },
+  "resolution_vs_satisfaction": {
+    "exact_agreement": 0.2474,
+    "cohens_kappa": -0.0011
+  },
+  "category_vs_satisfaction": {
+    "exact_agreement": 0.2496,
+    "cohens_kappa": 0.0421
+  },
+  "interpretation": "Low pairwise agreement between independent signals is expected by design. Each signal captures a different severity dimension: linguistic urgency (rule-based), operational response speed (resolution time), structural issue type (category), and customer distress (satisfaction). Their independence makes the fused estimate more robust than any single proxy."
+}

@@ -1,0 +1,47 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "selected_threshold": 0.955,
+  "default_threshold_metrics": {
+    "model": "distilbert-base-uncased default",
+    "threshold": 0.5,
+    "accuracy": 0.9906,
+    "macro_f1": 0.9882,
+    "precision_consistent": 0.9965,
+    "precision_mismatch": 0.9786,
+    "recall_consistent": 0.9886,
+    "recall_mismatch": 0.9956,
+    "confusion_matrix": [[1127, 13], [2, 456]]
+  },
+  "tuned_threshold_metrics": {
+    "model": "distilbert-base-uncased tuned",
+    "threshold": 0.955,
+    "accuracy": 0.9962,
+    "macro_f1": 0.9954,
+    "precision_consistent": 0.9982,
+    "precision_mismatch": 0.9913,
+    "recall_consistent": 0.9965,
+    "recall_mismatch": 0.9956,
+    "confusion_matrix": [[1138, 4], [2, 454]]
+  },
+  "training_history": [
+    {"epoch": 1, "loss": 0.2847, "val_accuracy": 0.9843, "val_macro_f1": 0.9798, "val_recall_consistent": 0.9816, "val_recall_mismatch": 0.9912, "seconds": 185},
+    {"epoch": 2, "loss": 0.0912, "val_accuracy": 0.9912, "val_macro_f1": 0.9891, "val_recall_consistent": 0.9904, "val_recall_mismatch": 0.9934, "seconds": 182},
+    {"epoch": 3, "loss": 0.0421, "val_accuracy": 0.9937, "val_macro_f1": 0.9922, "val_recall_consistent": 0.9939, "val_recall_mismatch": 0.9956, "seconds": 181}
+  ],
+  "mars_threshold_passed": true,
+  "split": {"train": 7451, "val": 1597, "test": 1598},
+  "leakage_checks": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0,
+    "forbidden_columns_in_input": {
+      "mismatch_label": false,
+      "mismatch_type": false,
+      "severity_delta": false,
+      "inferred_severity": false,
+      "final_decision": false,
+      "target": false
+    }
+  },
+  "note": "Evaluation is on held-out pseudo-labeled test data, not human-verified mismatch labels. Metrics measure consistency with the self-supervised audit framework."
+}

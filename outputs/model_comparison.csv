@@ -1,0 +1,5 @@
+,accuracy,macro_f1,recall_consistent,recall_mismatch,threshold,all_passed,status
+distilbert_finetuned,0.9962,0.9954,0.9965,0.9956,0.955,True,SELECTED — final model (fine-tuned on pseudo-labeled data)
+mlp_neural_classifier,0.9343,0.9168,0.9746,0.8333,0.215,True,strong neural baseline
+logistic_regression,0.8746,0.8507,0.8922,0.8306,0.5,True,classical baseline
+hist_gradient_boosting,0.8437,0.8165,0.8594,0.8043,0.5,False,comparison model

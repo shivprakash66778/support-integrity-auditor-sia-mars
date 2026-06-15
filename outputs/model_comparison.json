@@ -1,0 +1,38 @@
+{
+  "distilbert_finetuned": {
+    "accuracy": 0.9962,
+    "macro_f1": 0.9954,
+    "recall_consistent": 0.9965,
+    "recall_mismatch": 0.9956,
+    "threshold": 0.955,
+    "all_passed": true,
+    "status": "SELECTED — final model (fine-tuned on pseudo-labeled data)"
+  },
+  "mlp_neural_classifier": {
+    "accuracy": 0.9343,
+    "macro_f1": 0.9168,
+    "recall_consistent": 0.9746,
+    "recall_mismatch": 0.8333,
+    "threshold": 0.215,
+    "all_passed": true,
+    "status": "strong neural baseline"
+  },
+  "logistic_regression": {
+    "accuracy": 0.8746,
+    "macro_f1": 0.8507,
+    "recall_consistent": 0.8922,
+    "recall_mismatch": 0.8306,
+    "threshold": 0.50,
+    "all_passed": true,
+    "status": "classical baseline"
+  },
+  "hist_gradient_boosting": {
+    "accuracy": 0.8437,
+    "macro_f1": 0.8165,
+    "recall_consistent": 0.8594,
+    "recall_mismatch": 0.8043,
+    "threshold": 0.50,
+    "all_passed": false,
+    "status": "comparison model"
+  }
+}
