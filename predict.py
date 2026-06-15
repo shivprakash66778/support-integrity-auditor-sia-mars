@@ -153,8 +153,14 @@ def predict_batch(df, lr, tfidf, meta_prep, res_thresholds,
             transformer_texts, bert_model, bert_tokenizer,
             threshold=bert_threshold)
     elif mlp is not None:
+    try:
+        # MLP artifact is a sklearn Pipeline, so it expects raw text input
+        mlp_texts = df.apply(build_transformer_input, axis=1).values
+        df["mismatch_probability"] = mlp.predict_proba(mlp_texts)[:, 1]
+    except Exception as e:
+        print(f"MLP prediction failed ({e}), falling back to LR")
         X, _, _ = build_features(df, tfidf=tfidf, meta_prep=meta_prep)
-        df["mismatch_probability"] = mlp.predict_proba(X)[:, 1]
+        df["mismatch_probability"] = lr.predict_proba(X)[:, 1]
     elif hgb is not None and ohe is not None and scaler is not None:
         X, _, _ = build_features(df, tfidf=tfidf, meta_prep=meta_prep)
         lr_probs = lr.predict_proba(X)[:, 1]
